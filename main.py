@@ -1,11 +1,9 @@
 #!/usr/bin/env python
-
 import usuario
 import administrador
 import vendedor
 import cliente
 import producto
-
 
 cliente = cliente.Cliente("Pedro Pineda", "1234456", "pedro", "pedro@gmail.com", "1234", "Cliente")
 vendedor = vendedor.Vendedor("Jose Pineda", "1234456", "jose", "jose@gmail.com", "1234", "Vendedor", "Frutas")
@@ -18,7 +16,7 @@ vendedores.append(vendedor)
 admin = administrador.Administrador("Juan Perez", "1234567", "juan", "juanito@gmail.com", "1234", "Administrador", vendedores)
 usuarios.append(admin)
 
-producto1 = producto.Producto("MAnzana", 12, 12, "fruta")
+producto1 = producto.Producto("Manzana", 12, 12, "fruta")
 
 admin.login(usuarios)
 cliente.login(usuarios)
